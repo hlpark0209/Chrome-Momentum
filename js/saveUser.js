@@ -21,14 +21,13 @@ function onLoginSubmit(e){
 }
 
 // 중복되는 function 생성
-function paintWelcome (savedUsername){
-    welcome.innerText = `Welcome ! ${savedUsername}`;
+function paintWelcome (username){
+    welcome.innerText = `Welcome ! ${username}`;
     welcome.classList.remove('hidden');
 }
 
 // localstorage에 username 저장
 const savedUsername = localStorage.getItem("username");
-console.log(savedUsername);
 
 if( savedUsername === null ){
     loginForm.classList.remove('hidden');
