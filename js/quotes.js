@@ -50,7 +50,7 @@ const author = document.querySelector('.quotes span:last-child');
 
 // 10개의 명언을 랜덤으로 가져오기
 const todayQutoes = quotes[Math.floor(Math.random() * quotes.length)];
-console.log(todayQutoes);
+
 
 quote.innerText = todayQutoes.quote;
 author.innerText = todayQutoes.author;
