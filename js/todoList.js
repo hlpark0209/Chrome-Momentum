@@ -14,6 +14,10 @@ let toDos = [];
     function deleteTodo(event){
         const parentLi = event.target.parentElement;
         parentLi.remove();
+        // 지우고싶은 요소를 제거하고 새 배열을 생성 (filter)
+        // string을 number로 변경 ( parseInt )        
+        toDos = toDos.filter( toDo => toDo.id !== parseInt(parentLi.id) );
+        saveTodo();
     }
 
 
@@ -75,3 +79,6 @@ if(savedTodo){
     parsedTodo.forEach(paintTodo);
     //parsedTodo.forEach( (item) => {console.log('this tis the turn of item', item);});
 }
+
+
+
