@@ -27,7 +27,6 @@
 ✔️ 유저의 이름과 todo list 등록 및 해당 정보가 local Storage에 저장
 ✔️ 랜덤 Background 이미지, quotes(명언) 생성
 ✔️ 날씨 api를 활용하여 현재 위치(위/경도)의 도시이름, 날씨, 기온정보 확인
-
 ```
 <br/>
 
