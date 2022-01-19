@@ -8,7 +8,12 @@
 
 ## 📱 Preview
 
-![preview](https://user-images.githubusercontent.com/39701029/149966307-af955098-a19c-4dfc-95fe-b52aa2d08dad.jpg)
+![Momentum](https://user-images.githubusercontent.com/39701029/149966307-af955098-a19c-4dfc-95fe-b52aa2d08dad.jpg)
+
+<br/>
+
+## 🖥 Demo
+- [Chrome-Momentum](https://hlpark0209.github.io/Chrome-Momentum/)
 
 <br/>
 
