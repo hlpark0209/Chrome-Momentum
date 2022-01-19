@@ -13,7 +13,7 @@
 <br/>
 
 ## 🖥 Demo
-- [ Play the Game!▶](https://hlpark0209.github.io/Chrome-Momentum/)
+- [Chrome-Momentum](https://hlpark0209.github.io/Chrome-Momentum/)
 
 <br/>
 
