@@ -12,6 +12,8 @@ const images = [
     "background_08.jpg",
     "background_09.jpg",
     "background_10.jpg",
+    "background_11.jpg",
+    "background_12.jpg",
 ];
 
 const randomBg = images[Math.floor(Math.random() * images.length)];
