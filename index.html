@@ -9,7 +9,7 @@
 
     <script src="https://kit.fontawesome.com/f85d7cf19d.js" crossorigin="anonymous"></script>
     <script src="js/saveUser.js" defer></script>
-    <!-- <script src="js/clock.js" defer></script> -->
+    <script src="js/clock.js" defer></script>
     <!-- <script src="js/quotes.js" defer></script> -->
     <!-- <script src="js/background.js" defer></script> -->
     <script src="js/todoList.js" defer></script>
@@ -35,16 +35,16 @@
             <!-- bookmark -->
             <ul class="bookmark">
                 <li class="items">
-                    <a href="/"><i class="fab fa-google"></i></a>
+                    <a href="https://www.google.com/" target="_blank"><i class="fab fa-google"></i></a>
                 </li>
                 <li class="items">
-                    <a href="/"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
                 </li>
                 <li class="items">
-                    <a href="/"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
                 </li>
                 <li class="items">
-                    <a href="/"><i class="fab fa-instagram-square"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a>
                 </li>
             </ul>
 
@@ -72,24 +72,26 @@
                 <span></span>
             </div>
 
-            <!-- todolist -->
-            <h4>todolist</h4>
-            <form class="todo-form">
-                <input
-                required 
-                type="text"
-                placeholder="Write your Todo and Press Enter">
-            </form>
-            <ul class="todo-list"></ul>
-            
-            <!-- Music -->
-            <h4>Music</h4>
-            <form class="todo-form">
-                <input
-                required 
-                type="text">
-            </form>
+            <div class="listWrap">
+                <!-- todolist -->
+                <div class="todo">
+                    <h2>Today</h2>
+                    <form class="todo-form">
+                        <input
+                        required 
+                        type="text"
+                        placeholder="Write your Todo and Press Enter">
+                        <i class="fas fa-plus"></i>
+                    </form>
+                    <ul class="todo-list"></ul>
+                </div>
 
+                <!-- Music -->
+                <div class="music">
+                    <h2>Music</h2>
+                    
+                </div>
+            </div>
 
         </section>
 

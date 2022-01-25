@@ -4,6 +4,7 @@ const loginForm = document.querySelector('.login-form');
 const welcome = document.querySelector('.welcome');
 const loginInput = document.querySelector('.login-form input');
 const link = document.querySelector('a');
+const bookmark = document.querySelector('.bookmark');
 // string만 포함된 변수 or 중요한 정보를 담지않는 변수는 대문자료 표기
 // const HIDDEN_CLASSNAME = 'hidden';
 // const USERNAMEKEY = 'username';
@@ -24,8 +25,8 @@ function onLoginSubmit(e){
 function paintWelcome (username){
     welcome.innerText = `Welcome ! ${username}`;
     welcome.classList.remove('hidden');
+    bookmark.style.marginTop = "110px";
 }
-
 // localstorage에 username 저장
 const savedUsername = localStorage.getItem("username");
 
