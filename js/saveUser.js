@@ -23,7 +23,7 @@ function onLoginSubmit(e){
 
 // 중복되는 function 생성
 function paintWelcome (username){
-    welcome.innerText = `Welcome ! ${username}`;
+    welcome.innerText = `Welcome !  ${username}`;
     welcome.classList.remove('hidden');
     bookmark.style.marginTop = "110px";
 }

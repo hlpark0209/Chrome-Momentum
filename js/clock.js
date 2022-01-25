@@ -19,7 +19,6 @@ function getDate(){
     const year = String(days.getFullYear());
     const month = String(days.getMonth() + 1).padStart(2, "0");
     const day = String(days.getDate());
-    console.log(year, month, day);
     
 
 
@@ -29,6 +28,5 @@ function getDate(){
 
 getDate();
 getClock();
-// setInterval(getDate,  1000);
 setInterval(getClock,  1000);
 

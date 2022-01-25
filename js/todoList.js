@@ -37,6 +37,7 @@ function paintTodo(newTodo){
     newTodoLi.appendChild(span);
     newTodoLi.appendChild(del);
     list.appendChild(newTodoLi);
+    newTodoLi.scrollIntoView({block: "center"});
 }
 
 // 추가된 li의 value 값을 전달
