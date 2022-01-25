@@ -2,14 +2,14 @@
 body{
     padding: 0;
     margin: 0;
-    color: #fff;
     font-family: 'Open Sans', sans-serif;
-    background-image : linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
+    background: rgb(219,134,255);
+    background: linear-gradient(90deg, rgba(219,134,255,1) 0%, rgba(255,251,135,1) 100%);
+    box-sizing: border-box;
     
+}
+a:active{
+    color: transparent;
 }
 ul {
     list-style: none;
@@ -24,101 +24,82 @@ button{
     text-align: right;
     cursor: pointer;
 }
-
-.hidden{
-    display: none;
+input{
+    border: 0;
+    outline: none;
 }
 
-.clock{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 9rem;
-    text-align: center;
+
+
+
+.container{
+    display: flex;
+    /* background-color: #fff;
+    filter: blur(50px); */
+    
 }
-.login-form, .welcome{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 50px 0px;
-    border-bottom: 3px solid #fff;
+
+.container__left{
+    height: 100vh;
+    border-radius: 0px 10px 10px 0px ;
+    background: rgba(255, 255, 255, 0.103);
+    box-shadow: 10px 10px 50px rgba(73, 73, 73, 0.1);
+    backdrop-filter: blur(40px);
 }
-.welcome{
-    border:none;
+.login-form{
+    width: 80%;
+    padding: 30px 15px;
+    
 }
 .login-form input{
-    width: 400px;
-    height: 50px;
-    font-size: 2rem;
-    padding: 10px;
-    background-color: transparent;
-    border: none;
-    outline:0;
-    caret-color: #fff;
-    color: #fff;
-    
-}
-.todo-form{
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 50px 0px;
-    border-bottom: 3px solid #fff;
-    color: #fff;
-    padding: 15px ;
-    
-    
-}
-.todo-form input{
-    width: 300px;
     height: 20px;
-    font-size: 1.3rem;
-    padding: 10px;
-    background-color: transparent;
-    border: none;
-    outline:0;
-    margin-top: 30px;
-    text-align: left;
-    caret-color: #fff;
-    color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 14%) 0px 2px 8px 0px;
+    font-size: 1em;
+    padding: 13px;
 }
-.todo-list{
-    position: absolute;
-    top:75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 20px;
-    color: #fff;
-    text-align: left;
-    
+.bookmark{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
-li{
-    padding: 10px;
-    width: 300px;
+.items a{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin: 10px 0px;
 }
-.quotes{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 20px;
-    font-style:italic ;
+.items{
+    width: 60px;
+    height: 60px;
+    margin: 10px 0px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.items:hover{
+    transform: rotate(360deg);
 }
 .weather{
     position: absolute;
-    top: 0;
-    right: 0;
-    margin: 20px;
-}
-.layer{
-    background-color : black;
-    position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
-    opacity: 0.6;
-    width: 100%;
-    height: 100%;
+    padding: 30px 15px;
+    border: 2px solid red;
+}
+
+
+
+
+
+
+
+
+.container__right{
+    margin: 50px;
+    border: 3px solid blue;
 }
