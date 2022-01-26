@@ -8,13 +8,14 @@
     <link rel="icon" type="image/png" href="">
 
     <script src="https://kit.fontawesome.com/f85d7cf19d.js" crossorigin="anonymous"></script>
-    <script src="js/saveUser.js" defer></script>
+    <!-- <script src="js/saveUser.js" defer></script> -->
     <script src="js/clock.js" defer></script>
     <script src="js/quotes.js" defer></script>
     <!-- <script src="js/background.js" defer></script> -->
     <script src="js/todoList.js" defer></script>
     <script src="js/weather.js" defer></script>
     <script src="js/music.js" defer></script>
+    <script src="js/data.json"></script>
     <title>My Momentum</title>
 </head>
 <body>
@@ -105,20 +106,27 @@
                     <div class="music">
                         <h2>Music</h2>
                         <div class="album">
-                            <div class="album__cover"></div>
-                            <div class="album__btn">
-                                <button class="album__pre">
-                                    <i class="fas fa-backward"></i>
-                                </button>
-                                <button class="album__play">
-                                    <i class="fas fa-play"></i>
-                                </button>
-                                <button class="album__next">
-                                    <i class="fas fa-forward"></i>
-                                </button>
+                            <div class="album__cover">
+                                <!-- <img src="img/boyfriend.jpg" alt="album image"> -->
                             </div>
-                            <h3 class="musicTitle"></h3>
-                            <p class="musicSinger"></p>
+                            
+                            <div class="musicWrap">
+                                <div class="musicInfo">
+                                    <h3 class="musicTitle">Title sample</h3>
+                                    <p class="musicSinger">Singer sample</p>
+                                </div>
+                                <div class="album__btn">
+                                    <button class="album__pre">
+                                        <i class="fas fa-backward"></i>
+                                    </button>
+                                    <button class="album__play">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                    <button class="album__next">
+                                        <i class="fas fa-forward"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
