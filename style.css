@@ -24,9 +24,11 @@ ul {
     margin: 0;
 }
 button{
-    border: none;
+    border: 0;
     cursor: pointer;
     font-size: 0.8em;
+    outline: none;
+    background: transparent;
 }
 input{
     border: 0;
@@ -254,6 +256,9 @@ h1, h2, h3, h4, p{
     justify-content: space-around;
     font-size: 2em;
     margin: 50px auto;
+}
+.album__pre:hover, .album__play:hover, .album__next:hover{
+    background: rgba(255, 255, 255, 0.623);
 }
 .album__pre, .album__play, .album__next{
     width: 70px;

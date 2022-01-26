@@ -25,7 +25,6 @@ function onLoginSubmit(e){
 function paintWelcome (username){
     welcome.innerText = `Welcome !  ${username}`;
     welcome.classList.remove('hidden');
-    bookmark.style.marginTop = "110px";
 }
 // localstorage에 username 저장
 const savedUsername = localStorage.getItem("username");
