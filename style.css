@@ -6,7 +6,7 @@ body{
     /* background: rgb(219,134,255);
     background: linear-gradient(90deg, rgba(219,134,255,1) 0%, rgba(255,251,135,1) 100%);*/
     box-sizing: border-box; 
-    background: url('./img/background_07.jpg') no-repeat center center;
+    background: url('./img/background_12.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
     -webkit-user-select:none;
@@ -52,7 +52,7 @@ h1, h2, h3, h4, p{
 .container__left{
     flex-shrink: 0;
     flex-basis: 120px;
-    height: 100vh;
+    max-height: 100%;
     border-radius: 0px 10px 10px 0px ;
     background: rgba(255, 255, 255, 0.103);
     box-shadow: 10px 10px 50px rgba(73, 73, 73, 0.1);
@@ -91,25 +91,24 @@ h1, h2, h3, h4, p{
     text-align: center;
     margin-top: 50px;
 }
+.items img{
+    width: 30px;
+    height: 30px;
+    transform: translateY(50%);
+}
 .items a{
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    margin: 10px 0px;
+    padding: 10px;
 }
 .items{
-    width: 50px;
-    height: 50px;
-    margin: 15px 0px;
-    background: rgba(255, 255, 255, 0.205);
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    margin: 18px 0px;
+    background: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
-    font-size: 1.3em;
     cursor: pointer;
     transition: all 0.1s ease-in-out;
-}
-.items .fa-google{
-    color: rgb(255, 255, 255);
 }
 .items .fa-youtube{
     color: rgb(240, 0, 0);
@@ -123,6 +122,7 @@ h1, h2, h3, h4, p{
 
 .items:hover{
     transform: rotate(360deg);
+    background: rgba(255, 255, 255, 0.315);
 }
 
 
@@ -131,10 +131,9 @@ h1, h2, h3, h4, p{
 
 
 .container__right{
-    width: 4000px;
-    margin: 70px 120px 70px;
+    max-width: 3000px;
+    margin: 50px auto;
     text-align: center;
-    box-shadow: 10px 10px 50px rgba(73, 73, 73, 0.1);
     border-radius: 50px;
 }
 .listWrap{
