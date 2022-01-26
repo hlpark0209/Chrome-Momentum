@@ -6,13 +6,14 @@ body{
     /* background: rgb(219,134,255);
     background: linear-gradient(90deg, rgba(219,134,255,1) 0%, rgba(255,251,135,1) 100%);*/
     box-sizing: border-box; 
-    background: url('./img/bg.jpg') no-repeat center center;
+    background: url('./img/background_07.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
     -webkit-user-select:none;
     -moz-user-select:none;
     -ms-user-select:none;
     user-select:none;
+    backdrop-filter: blur(20px);
 }
 a:active{
     color: transparent;
@@ -50,7 +51,7 @@ h1, h2, h3, h4, p{
 
 .container__left{
     flex-shrink: 0;
-    flex-basis: 250px;
+    flex-basis: 120px;
     max-height: 100%;
     border-radius: 0px 10px 10px 0px ;
     background: rgba(255, 255, 255, 0.103);
@@ -88,18 +89,18 @@ h1, h2, h3, h4, p{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    
+    margin-top: 50px;
 }
 .items a{
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
     margin: 10px 0px;
 }
 .items{
-    width: 60px;
-    height: 60px;
-    margin: 10px 0px;
+    width: 50px;
+    height: 50px;
+    margin: 15px 0px;
     background: rgba(255, 255, 255, 0.205);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
@@ -123,12 +124,7 @@ h1, h2, h3, h4, p{
 .items:hover{
     transform: rotate(360deg);
 }
-.weather{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 30px 15px;
-}
+
 
 
 
@@ -136,11 +132,9 @@ h1, h2, h3, h4, p{
 
 .container__right{
     width: 4000px;
-    margin: 90px;
+    margin: 50px 120px 120px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.103);
     box-shadow: 10px 10px 50px rgba(73, 73, 73, 0.1);
-    backdrop-filter: blur(20px);
     border-radius: 50px;
 }
 .listWrap{
@@ -157,7 +151,7 @@ h1, h2, h3, h4, p{
     margin: 35px;
 }
 .todo{
-    flex: 1;
+    width: 50%;
     background: rgba(255, 255, 255, 0.308);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
@@ -231,41 +225,104 @@ h1, h2, h3, h4, p{
     background: darksalmon;
     font-size: 1.3em;
 }
-
-.music{
+.container__right__centents{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 500px;
+}
+.weatherQuotes{
+    display: flex;
+    margin-bottom: 30px;
+}
+.weather{
+    flex: 1;
+    background: rgba(255, 255, 255, 0.308);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 15px;
+}
+.weather　span
+.weatherCity{
+    font-size: 1.5em;
+    padding: 15px;
+    text-align: left;
+}
+.weatherName, .weatherTemp{
+    font-size: 1.2em;
+    padding: 15px;
+    text-align: left;
+}
+.quotes{
     flex: 1;
     background: rgba(255, 255, 255, 0.308);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     padding: 10px;
 }
+.quotes h2{
+    padding: 15px 0px;
+}
+.quotesContext{
+    font-size: 1.2em;
+}
+.quotesAuthor{
+    font-size: 0.8em;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+.music{
+    background: rgba(255, 255, 255, 0.308);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 10px;
+}
+.weather h2{
+    padding: 15px 0px;
+}
 .album{
-    margin:  0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 20px;
 }
 .album__cover{
-    width: 180px;
-    height: 180px;
-    margin:  30px auto;
+    width: 90px;
+    height: 90px;
     background: wheat;
     border: 5px solid #fff;
     border-radius: 50%;
     opacity: 0.8;
+    margin: 0px 20px;
 }
 .album__btn{
     display: flex;
-    justify-content: space-around;
-    font-size: 2em;
-    margin: 50px auto;
+    justify-content: space-evenly;
+    color: #585858;
+    align-items: center;
+    font-size: 1.5em;
 }
 .album__pre:hover, .album__play:hover, .album__next:hover{
     background: rgba(255, 255, 255, 0.623);
+    
 }
+
 .album__pre, .album__play, .album__next{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     text-align: center;
-    line-height: 70px;
+    margin: 0px 20px;
+    line-height: 50px;
     background: rgba(255, 255, 255, 0.322);
     border-radius: 50%;
     box-shadow: 10px 10px 50px rgba(73, 73, 73, 0.1);
+}
+.album__play{
+    width: 70px;
+    height: 70px;
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 70px;
 }

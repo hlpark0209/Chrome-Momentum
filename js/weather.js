@@ -11,14 +11,15 @@ function geoOk(position){
     fetch(url)
     .then( response => response.json())
     .then(data => {
-        const weather = document.querySelector('.weather span:first-child');
-        const city = document.querySelector('.weather span:last-child');
-        city.innerText = `City : ${data.name}`;
-        weather.innerText = `${data.weather[0].main}`;
-        
-        
+        const city = document.querySelector('.weatherCity');
+        const weather = document.querySelector('.weatherName');
+        const temp= document.querySelector('.weatherTemp');
+        city.innerText = ` 🏢 : ${data.name}`;
+        weather.innerText = ` ⛅ :${data.weather[0].main}`;
+        temp.innerText =  ` 🌡 :${data.main.temp}`;
+        // console.log(city, weather, temp);
     });
-
+    
 }
 function geoError(){
     alert("Can't find you. No weather for you");
@@ -27,3 +28,4 @@ function geoError(){
 
 navigator.geolocation.getCurrentPosition(geoOk, geoError);
 
+temp

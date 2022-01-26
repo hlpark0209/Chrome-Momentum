@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/f85d7cf19d.js" crossorigin="anonymous"></script>
     <script src="js/saveUser.js" defer></script>
     <script src="js/clock.js" defer></script>
-    <!-- <script src="js/quotes.js" defer></script> -->
+    <script src="js/quotes.js" defer></script>
     <!-- <script src="js/background.js" defer></script> -->
     <script src="js/todoList.js" defer></script>
     <script src="js/weather.js" defer></script>
@@ -47,13 +47,6 @@
                     <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a>
                 </li>
             </ul>
-
-            <!-- weather -->
-            <div class="weather">
-                <span></span>
-                <Br />
-                <span></span>
-            </div>
         </section>
 
 
@@ -66,11 +59,6 @@
             <h2 class="clock">00:00:00</h2>
             
 
-            <!-- quotes -->
-            <div class="quotes">
-                <span></span>
-                <span></span>
-            </div>
 
             <div class="listWrap">
                 <!-- todolist -->
@@ -86,23 +74,43 @@
                     <ul class="todo-list"></ul>
                 </div>
 
-                <!-- Music -->
-                <div class="music">
-                    <h2>Music</h2>
-                    <div class="album">
-                        <div class="album__cover"></div>
-                        <div class="album__btn">
-                            <button class="album__pre">
-                                <i class="fas fa-backward"></i>
-                            </button>
-                            <button class="album__play">
-                                <i class="fas fa-play"></i>
-                            </button>
-                            <button class="album__next">
-                                <i class="fas fa-forward"></i>
-                            </button>
+                
+                <div class="container__right__centents">
+                    <div class="weatherQuotes">
+                        <!-- weather -->
+                        <div class="weather">
+                            <h2>Weather</h2>
+                            <span class="weatherCity"></span>
+                            <br />
+                            <span class="weatherName"></span>
+                            <br />
+                            <span class="weatherTemp"></span>
+                        </div>                    
+                        <!-- quotes -->
+                        <div class="quotes">
+                            <h2>Quotes</h2>
+                            <span class="quotesContext""></span>
+                            <Br />
+                            <span class="quotesAuthor"></span>
                         </div>
-
+                    </div>
+                    <!-- Music -->
+                    <div class="music">
+                        <h2>Music</h2>
+                        <div class="album">
+                            <div class="album__cover"></div>
+                            <div class="album__btn">
+                                <button class="album__pre">
+                                    <i class="fas fa-backward"></i>
+                                </button>
+                                <button class="album__play">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="album__next">
+                                    <i class="fas fa-forward"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
