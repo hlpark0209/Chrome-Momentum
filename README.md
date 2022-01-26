@@ -1,7 +1,7 @@
 # My Momentum
 
 ## 📅 Project Name : My Momentum
-* html/css/vanilla javascript로 만든 모멘텀 입니다.
+* html/css/vanilla javascript로 만든 모멘텀v.2 입니다.
 
 <br/>
 
