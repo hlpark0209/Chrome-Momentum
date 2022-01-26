@@ -38,9 +38,30 @@ const album = document.querySelector('.album__cover');
 const preBtn = document.querySelector('.album__pre');
 const playBtn = document.querySelector('.album__play');
 const nextBtn = document.querySelector('.album__next');
+const title = document.querySelector('.musicTitle');
+const singer = document.querySelector('.musicSinger');
+
+const boyfriend = new Audio("./music/ariana grande_boyfriend material.mp3");
+
+
+
+let songIndex = 0;
 
 
 
 
 
+function playSong(e){
+    e.play();
+    sound.currentTime = 0;
+    // const titleIndex = music[0].title;
+    // title.innerText = titleIndex;
+    
+    
 
+}
+
+
+
+
+playBtn.addEventListener("click", playSong);
