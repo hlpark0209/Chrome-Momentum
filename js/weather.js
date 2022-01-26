@@ -15,8 +15,8 @@ function geoOk(position){
         const weather = document.querySelector('.weatherName');
         const temp= document.querySelector('.weatherTemp');
         city.innerText = ` 🏢 : ${data.name}`;
-        weather.innerText = ` ⛅ :${data.weather[0].main}`;
-        temp.innerText =  ` 🌡 :${data.main.temp}`;
+        weather.innerText = ` ⛅ : ${data.weather[0].main}`;
+        temp.innerText =  ` 🌡 : ${data.main.temp}`;
         // console.log(city, weather, temp);
     });
     
