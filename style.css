@@ -293,9 +293,9 @@ h1, h2, h3, h4, p{
     margin: 0px 20px 30px;
 }
 .album__cover{
+    background: url('./img/bg.jpg') no-repeat center;
     width: 130px;
     height: 130px;
-    background: wheat;
     border: 5px solid #fff;
     border-radius: 50%;
     opacity: 0.8;

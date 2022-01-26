@@ -28,4 +28,3 @@ function geoError(){
 
 navigator.geolocation.getCurrentPosition(geoOk, geoError);
 
-temp
